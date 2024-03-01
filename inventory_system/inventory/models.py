@@ -39,17 +39,7 @@ class OrderItem(models.Model):
     
     def __str__(self):
         return f'Order: {self.order.id}, Item: {self.item.name}, Quantity: {self.quantity}'
-    
 
-class Customer(models.Model):
-    name = models.CharField(max_length=100)
-    address = models.TextField()
-    phone = models.CharField(max_length=20)
-    email = models.EmailField()
-    orders = models.ManyToManyField(Order)
-    
-    def __str__(self):
-        return self.name
 
 class Supplier(models.Model):
     name = models.CharField(max_length=100)
