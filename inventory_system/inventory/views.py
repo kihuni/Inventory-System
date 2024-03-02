@@ -4,7 +4,7 @@ from .models import Item, Category, Order, Supplier
 from django.urls import reverse_lazy
 
 # Create your views here.
-class ProductList(ListView):
+class ProductListView(ListView):
     model = Item
     template_name = 'product_list.html'
-    context_object_name = 'product_list'
+    
