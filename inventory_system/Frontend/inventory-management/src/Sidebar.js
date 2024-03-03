@@ -1,28 +1,29 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import ItemListing from "./ItemListing";
+import './Sidebar.css';
 
 const Sidebar = () => {
-    const [activeComponent, setActiveComponent] = useState(<ItemListing />);
+    const [activeComponent, setActiveComponent] = useState('dashboard'); // State to track active component
 
     return (
         <div className="sidebar">
             <Header />
             <ul>
                 <li>
-                    <a href="/dashboard">Dashboard</a>
+                    <a href="#" onClick={() => setActiveComponent('dashboard')}>Dashboard</a> {/* Set active component to dashboard */}
                 </li>
                 <li>
-                    <a href="/inventory">Inventory</a>
+                    <a href="#" onClick={() => setActiveComponent('inventory')}>Inventory</a> {/* Set active component to inventory */}
                 </li>
                 <li>
-                    <a href="/orders">Orders</a>
+                    <a href="#" onClick={() => setActiveComponent('orders')}>Orders</a> {/* Set active component to orders */}
                 </li>
                 <li>
-                    <a href="/supplier">Suppliers</a>
+                    <a href="#" onClick={() => setActiveComponent('supplier')}>Suppliers</a> {/* Set active component to suppliers */}
                 </li>
             </ul>
-            {activeComponent}
+            {activeComponent === 'dashboard' && <ItemListing isActive={true} />} {/* Render ItemListing only when dashboard is active */}
         </div>
     );
 }

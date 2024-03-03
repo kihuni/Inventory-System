@@ -5,6 +5,7 @@ from .serializers import ItemSerializer, CategorySerializer, OrderSerializer, Or
 class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()
     serializer_class = ItemSerializer
+
     
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
