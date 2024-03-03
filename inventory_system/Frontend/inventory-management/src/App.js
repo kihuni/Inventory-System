@@ -1,9 +1,9 @@
-
+import Sidebar from './Sidebar.js';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Inventory Management System</h1>
+        <Sidebar /> 
       </header>
     </div>
   );
