@@ -1,32 +1,39 @@
 .item-listing-container {
-    margin-top: 20px; /* Adjust the top margin for spacing */
-    margin-left: 280px; /* Adjust the left margin to create space from the Sidebar */
-  }
-  
-  .item-listing-container h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .item-listing-container table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .item-listing-container th,
-  .item-listing-container td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .item-listing-container th {
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  .item-listing-container img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto; /* Center the image within its container */
-  }
-  
+  margin-top: 20px; 
+  margin-left: 280px; 
+  position: relative; 
+}
+
+.item-listing-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item-listing-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-listing-container th,
+.item-listing-container td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-listing-container th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.item-listing-container img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto; 
+}
+
+.create-item-button {
+  position: absolute;
+  left: 400px;
+  top: 10px; 
+  z-index: 1; 
+}

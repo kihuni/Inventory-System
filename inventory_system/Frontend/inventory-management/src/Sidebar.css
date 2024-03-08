@@ -1,30 +1,30 @@
 .sidebar {
-    width: 250px; /* Set width for the sidebar */
-    height: 100%; /* Set height to fill the entire height of the viewport */
-    position: fixed; /* Fixed position so it stays on the left side */
-    top: 0; /* Align to the top of the viewport */
-    left: 0; /* Align to the left side */
-    background-color: #f0f0f0; /* Background color */
-    padding: 20px; /* Add some padding for spacing */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    width: 250px; 
+    height: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color: #f0f0f0;
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .sidebar ul {
-    list-style-type: none; /* Remove default list styles */
+    list-style-type: none; 
     padding: 0;
   }
   
   .sidebar ul li {
-    margin-bottom: 10px; /* Add margin between list items */
+    margin-bottom: 10px; 
   }
   
   .sidebar ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set text color */
-    font-weight: bold; /* Set font weight to bold */
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
   }
   
   .sidebar ul li a:hover {
-    color: #555; /* Change text color on hover */
+    color: #555; 
   }
   

@@ -11,19 +11,19 @@ const Sidebar = () => {
             <Header />
             <ul>
                 <li>
-                    <a href="#" onClick={() => setActiveComponent('dashboard')}>Dashboard</a> {/* Set active component to dashboard */}
+                    <a href="#" onClick={() => setActiveComponent('dashboard')}>Dashboard</a> 
                 </li>
                 <li>
-                    <a href="#" onClick={() => setActiveComponent('inventory')}>Inventory</a> {/* Set active component to inventory */}
+                    <a href="#" onClick={() => setActiveComponent('item')}>Items</a> 
                 </li>
                 <li>
-                    <a href="#" onClick={() => setActiveComponent('orders')}>Orders</a> {/* Set active component to orders */}
+                    <a href="#" onClick={() => setActiveComponent('orders')}>Orders</a> 
                 </li>
                 <li>
-                    <a href="#" onClick={() => setActiveComponent('supplier')}>Suppliers</a> {/* Set active component to suppliers */}
+                    <a href="#" onClick={() => setActiveComponent('supplier')}>Suppliers</a>
                 </li>
             </ul>
-            {activeComponent === 'dashboard' && <ItemListing isActive={true} />} {/* Render ItemListing only when dashboard is active */}
+            {activeComponent === 'item' && <ItemListing isActive={true} />} 
         </div>
     );
 }

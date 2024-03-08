@@ -1,7 +1,6 @@
 from rest_framework import viewsets
 from .models import Item, Category, Order, OrderItem, Supplier, InventoryTransaction
 from .serializers import ItemSerializer, CategorySerializer, OrderSerializer, OrderItemSerializer, SupplierSerializer, InventoryTransactionSerializer
-from .permission import IsManager, IsProcurement
 
 
 class ItemViewSet(viewsets.ModelViewSet):
@@ -16,8 +15,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
 class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-    permission_classes = [IsManager]
-    permission_classes = [IsProcurement]
+   
     
 class OrderItemViewSet(viewsets.ModelViewSet):
     queryset = OrderItem.objects.all()
